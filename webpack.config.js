@@ -12,18 +12,20 @@ module.exports = {
     devServer: {
         static: './dist',
     },
-
+    
+    plugins: [
+        new HtmlWebpackPlugin({
+            title: 'Knights Travails',
+            template: "./src/index.html",
+            filename: "./index.html",
+        }),
+    ],
+    
     output: {
         filename: '[name].bundle.js',
         path: path.resolve(__dirname, "dist"),
         clean: true,
     },
-
-    plugins: [
-        new HtmlWebpackPlugin({
-            // title: 'Development',
-        }),
-    ],
 
     optimization: {
         runtimeChunk: 'single',
