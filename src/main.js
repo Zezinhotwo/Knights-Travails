@@ -1,4 +1,12 @@
 import "../src/stylesheet/style.css";
+import GameBoard from "./scripts/gameBoard";
+let ct = [1, 0]
+console.log(new GameBoard().move());
+console.log(new GameBoard().board)
+console.log(ct[0])
+console.log(new GameBoard());
+
+
 // const body = document.querySelector("body");
 
 // body.classList.add("hello");
