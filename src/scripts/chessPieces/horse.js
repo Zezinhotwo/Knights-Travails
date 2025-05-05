@@ -1,4 +1,4 @@
-import NodePieces from "../nodePieces";
+import NodePieces from "../Vertice";
 
 export default class Horse {
     initial = new NodePieces(0, 1);
